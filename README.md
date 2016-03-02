@@ -9,6 +9,14 @@ In the near future I will add examples for the usage of the library.
 
 ## Install
 
+### Installing via NuGet (recommended)
+
+In Visual Studio's [Package Manager Console](http://docs.nuget.org/docs/start-here/using-the-package-manager-console),
+simply enter the following command:
+
+	Install-Package OTRMono
+
+### Installing manually
   * Clone the repository
   * Open src/OTRLibMono.sln with MonoDevelop
   * Build the solution
