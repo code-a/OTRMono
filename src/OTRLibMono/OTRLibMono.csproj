@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AF77103B-46D1-442E-A44A-2B54AEF25F14}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>OTRLibMono</RootNamespace>
+    <AssemblyName>OTRLibMono</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\packages\BouncyCastle.1.7.0\lib\Net40-Client\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="OTRLibrary.cs" />
+    <Compile Include="Mono.OTR\OTRUtilities\Utility.cs" />
+    <Compile Include="Mono.OTR\OTRUtilities\OTRConstants.cs" />
+    <Compile Include="Mono.OTR\OTRManagers\SMPManager.cs" />
+    <Compile Include="Mono.OTR\OTRInterface\OTRObjectscs.cs" />
+    <Compile Include="Mono.OTR\OTRUtilities\DSASigner.cs" />
+    <Compile Include="Mono.OTR\OTRManagers\SignatureManager.cs" />
+    <Compile Include="Mono.OTR\OTRManagers\AKEKeysManager.cs" />
+    <Compile Include="Mono.OTR\OTRManagers\DataExchangeKeysManager.cs" />
+    <Compile Include="Mono.OTR\OTRManagers\DHKeysManager.cs" />
+    <Compile Include="Mono.OTR\OTRManagers\MessageManager.cs" />
+    <Compile Include="Mono.OTR\OTRManagers\OTRSession.cs" />
+    <Compile Include="Mono.OTR\OTRInterface\OTRSessionManager.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Mono.OTR\" />
+    <Folder Include="Mono.OTR\OTRUtilities\" />
+    <Folder Include="Mono.OTR\OTRManagers\" />
+    <Folder Include="Mono.OTR\OTRInterface\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>
