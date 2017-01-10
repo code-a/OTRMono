@@ -1,11 +1,15 @@
 # OTRMono
 
 ## Description
-This repository is a fork of the original OTRLibMono created by Don Fizachi and released under the The Code Project Open License (CPOL).
+This project is a mono library for OTR encryption. It supports OTR versions 1, 2 & 3.
+It is a fork of the original OTRLibMono created by Don Fizachi and released under the The Code Project Open License (CPOL).
 
-More information may be found at http://www.codeproject.com/Articles/644318/Off-The-Record-OTR-Security-Protocol
+## Why a fork?
+The original library is **not**: 
+  * cross platform compatible
+  * compatible with newer versions of MonoDevelop
+  * maintained any more...
 
-In the near future I will add examples for the usage of the library.
 
 ## Install
 
@@ -22,4 +26,9 @@ simply enter the following command:
   * Build the solution
   * Add the created DLL to your Mono-project
 
- 
+
+## Usage
+At the moment, there are no examples in this repository. I might add examples for the usage of the library in the future.
+
+**An easy to read introduction by Don Fizachi can be found at [OTR-Security-Protocol](http://www.codeproject.com/Articles/644318/Off-The-Record-OTR-Security-Protocol).**
+
