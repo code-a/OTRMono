@@ -1,5 +1,9 @@
 # OTRMono
 
+**This repository is archived and not maintained.**
+
+**If you are looking for a modern alternative to OTRv3 I recommend [X3DH](https://www.signal.org/docs/specifications/x3dh/) with [Double Ratchet](https://www.signal.org/docs/specifications/doubleratchet/) for the post key-agreement message encryption.**
+
 ## Description
 This project is a mono library for OTR encryption with support for OTR versions 1, 2 & 3.
 
